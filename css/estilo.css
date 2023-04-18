@@ -1,0 +1,39 @@
+
+*{
+    margin: 0;
+}
+nav{    
+    background-color: antiquewhite;
+    width: 100%;
+    height: 120px;
+    position: fixed;        
+}
+.logosinfondo {
+    display: inline;
+    width: 1px;
+
+}
+.enlace{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;}
+a{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+}
+@media only screen and (max-width: 500px) {
+    .enlace {
+        flex-direction: column;                        
+    }
+}
+
+p{
+    color: black;
+    padding-top: 150px;
+    margin-left: 15px;    
+}
+
+    

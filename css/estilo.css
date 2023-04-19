@@ -8,9 +8,11 @@ nav{
     height: 120px;
     position: fixed;        
 }
-.logosinfondo {
+.LogoSinFondo {
     display: inline;
-    width: 1px;
+    width: 5px;
+    border: 1px;
+    border-color: black;
 
 }
 .enlace{

@@ -14,9 +14,9 @@ ul {
     list-style: none;
 }
 
-/* li {
+li {
     margin: 10px 0;
-} */
+}
 
 a {
     text-decoration: none;
@@ -43,6 +43,10 @@ body {
     padding-bottom: 20px;
     z-index: 10;
     display: none;
+}
+
+.fixed__active {
+    background: rgba(14, 29, 40, 0.5);
 }
 
 .header {
@@ -161,20 +165,21 @@ body {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
 
-/* .profile_bg {
-    background: url(./img/bg8.jpg) no-repeat center;
+.profile_bg {
+    background: url(/img/DSC_4096.jpg) no-repeat center;
     position: relative;
     background-size: cover;
     display: flex;
     border-radius: 2px;
     height: 45vh;
-} */
+}
+
 .profile_img {
     position: absolute;
     min-width: 10px;
-    /* width: 10%; */
-    /* left: 40px;
-    top: 60px; */
+    width: 10%; 
+    left: 40px;
+    top: 60px;
     border-radius: 5px;
     /* overflow: hidden; */
     transition: all 0.2s ease-in-out;
@@ -186,27 +191,28 @@ body {
     align-items: center;
 }
 
-.profile_name {
+/* .profile_name {
     position: absolute;
     text-align: center;
     right: 20%;
-    /* top: 35%; */
-}
-.profile_name h2 {
+     top: 35%; 
+} */
+
+/* .profile_name h2 {
     text-shadow: 5px 5px 3px rgb(1, 10, 59);
     -webkit-text-stroke-color:#3d3c80;
     -webkit-text-stroke-width: 0.01vh;
     font-size: 7vh;
     color: #fff;
     letter-spacing: 4px;
-}
+} */
 
-.profile_name h4 {
+/* .profile_name h4 {
     text-shadow: 3px 3px 2px rgb(13, 25, 90);
     font-size: 4vh;
     color: #fff;
     letter-spacing: 4px;
-}
+} */
 
 
 @media only screen and (max-width: 1024px) {
@@ -223,14 +229,12 @@ body {
     }
     .profile_img {
         transform: scale(50%);
-
-
     }
-    .profile_name {
-        /* right: 25%; */
-        /* top: 70%; */
+    /* .profile_name {
+        right: 25%;
+        top: 70%;
         text-align: center;
-    }
+    } */
     .header__burger {
         display: block;
     }
@@ -247,6 +251,11 @@ body {
 }
 
 @media only screen and (max-width: 540px) {
+
+    .container {
+        width: 80%;
+        /* margin: 10px auto 0; */
+    }
     .section {
         padding: 0 10px;
     }
@@ -256,18 +265,21 @@ body {
     }
     .profile_img {
         top: 20px;
+        position: relative;
+        /* acomodar posicion del logo que se va a la derecha de la imagen */
     }
     .profile_img img {
-        width: 70%;
+        transform: scale(45%);
+        /* width: 200%; */
     }
-    .profile_name {
+    /* .profile_name {
         font-size: 50%;
-        /* top: 65%; */
-        /* right: -8%; */
-    }
-    /* .profile_name h2 {
-        font-size: 70%;
+        top: 65%;
+        right: -8%;
     } */
+     /* .profile_name h2 {
+        font-size: 70%;
+    }  */
     .about {
         grid-template-columns: repeat(1, 1fr);
     }

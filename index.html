@@ -13,24 +13,26 @@
         content="Bar de picadas, cerveceria, bodegon porteño. Lugar de encuentro y muy buena comida!!! " />
     <meta property="og:type" content="website">
 
-    <!-- compeltar url en cuanto subamos la web -->
-    <meta property="og:url" content="???">
+    <!-- compeltar url en cuanto subamos la web  -->
+    <!-- LISTO!!!! -->
+    <meta property="og:url" content="https://gargolian.github.io/EsquinaVernet/">
 
     <!-- cambiar la imagen por un print del index en cuanto la tengamos lista y subida -->
-    <meta property="og:image"
-        content="https://64.media.tumblr.com/02aa1c4d38641b4b63a42ccdff2e54e3/tumblr_inline_pl3c169hVH1reckt4_500.jpg">
+    <meta property="og:image" content="https://gargolian.github.io/EsquinaVernet/img/img_OGTEMP.jpg">
 
-    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="stylesheet" href="css/estilo.css">
     <link rel="shortcut icon" type="image/x-icon" href="favicon/android-chrome-192x192.png">
     <script src="https://kit.fontawesome.com/488b0d20be.js" crossorigin="anonymous"></script>
-    <script src="JS/app.js"></script>
+
     <title>Esquina Vernet</title>
 </head>
 
 <body>
-    <!--  ENCABEZADO Y BARRA DE NAVEGACION  -->
+    <!--  ******************** ENCABEZADO Y BARRA DE NAVEGACION ********************  -->
     <header class="header">
         <div class="container">
+            <!-- ******Inicio BURGER MENU****** -->
+            <!-- ******Inicio lineas de burger menu****** -->
             <div class="fixed">
                 <div class="header__burger burger">
                     <span class="burger__line burger__line--first"></span>
@@ -38,8 +40,54 @@
                     <span class="burger__line burger__line--third"></span>
                 </div>
             </div>
+            <!-- ******Fin lineas de burger menu****** -->
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a class="header__link js-scroll" href="/">Inicio</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link js-scroll" href="quienes.html">Quienes Somos</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link js-scroll" href="carta.html">Carta</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link js-scroll" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="header__item">
+                        <!-- Falta agregar HTML o link para pedidos -->
+                        <a class="header__link js-scroll" href="">Pedidos</a>
+                    </li>
+                </ul>
+                <div class="header__nav-close">
+                    <span class="header__nav-close-line"></span>
+                    <span class="header__nav-close-line"> <span>
+                </div>
+            </nav>
+            <!-- ******Fin BURGER MENU****** -->
+
             <div class="header__top">
                 <h1 title="Esquina Vernet" class="header__title">Esquina Vernet</h1>
+                <!-- ******Inicio Barra de navegacion inline****** -->
+                <nav class="header_nav">
+                    <ul class="header_list">
+                        <li class="header_item">
+                            <a class="header_link js-scroll" href="/">Inicio</a>
+                        </li>
+                        <li class="header_item">
+                            <a class="header_link js-scroll" href="quienes.html">Quienes Somos</a>
+                        </li>
+                        <li class="header_item">
+                            <a class="header_link js-scroll" href="carta.html">Carta</a>
+                        </li>
+                        <li class="header_item">
+                            <a class="header_link js-scroll" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- ******Fin Barra de navegacion inline****** -->
+                <!-- ******Inicio Social Links****** -->
                 <nav class="social_links">
                     <a title="Facebook" href="https://www.facebook.com/EsquinaVernet/?locale=es_LA">
                         <i class="fa-brands fa-facebook"></i>
@@ -50,50 +98,27 @@
                     <a title="Email" href="esquinavernet@gmail.com"><i class="fa-regular fa-envelope"></i>
                     </a>
                 </nav>
-
-                <nav class="header__nav">
-                    <ul class="header__list">
-                        <li class="header__item">
-                            <a class="header__link js-scroll" href="/">Inicio</a>
-                        </li>
-                        <li class="header__item">
-                            <a class="header__link js-scroll" href="quienes.html">Quienes Somos</a>
-                        </li>
-                        <li class="header__item">
-                            <a class="header__link js-scroll" href="carta.html">Carta</a>
-                        </li>
-                        <li class="header__item">
-                            <a class="header__link js-scroll" href="contacto.html">Contacto</a>
-                        </li>
-                        <li class="header__item">
-                            <!-- Falta agregar HTML o link para pedidos -->
-                            <a class="header__link js-scroll" href="">Pedidos</a>
-                        </li>
-                    </ul>
-                    <div class="header__nav-close">
-                        <span class="header__nav-close-line"></span>
-                        <span class="header__nav-close-line"> <span>
-                    </div>
-                </nav>
+                <!-- ******Fin Social Links****** -->
+                
             </div>
 
     </header>
-    <!-- ******************** FIN ENCABEZADO ******************** -->
+    <!-- ******************** FIN ENCABEZADO Y BARRA DE NAVEGACION ******************** -->
 
     <main class="page-content">
         <div class="container">
             <div class="cover">
                 <!-- SECCION IMAGEN BAR VERNET -->
                 <section class="profile">
-                    <div class="profile_bg">
+                    <!-- <div class="profile_bg">
                         <div class="profile_img">
                             <img title="Esquina Vernet" src="img/LogoSinFondo.png" alt="Logo Vernet" id="imagen">
-                        </div>
-                        <!-- <div class="profile_name">
+                        </div> -->
+                    <!-- <div class="profile_name">
                             <h2>ESQUINA VERNET</h2>
                             <h4>BAR DE PICADAS - CERVECERIA</h4>
                         </div> -->
-                    </div>
+                    <!-- </div> -->
                     <div class="profile_details">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam reprehenderit, libero
                             voluptatibus illo consequuntur explicabo culpa voluptatem nulla quis saepe rem, nostrum
@@ -185,7 +210,7 @@
     </footer>
     <!-- ******************** FIN FOOTER ******************** -->
 
-
+    <script src="JS/app.js"></script>
 </body>
 
 </html>

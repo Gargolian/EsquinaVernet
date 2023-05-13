@@ -14,11 +14,11 @@ ul {
     list-style: none;
 }
 
-li {
+
 li {
     margin: 10px 0;
 }
-}
+
 
 a {
     text-decoration: none;
@@ -241,8 +241,8 @@ body {
     position: absolute;
     text-align: center;
     right: 20%;
-    /* top: 35%; */
-}
+    top: 35%;
+}*/
 
 .profile_name h2 {
     text-shadow: 5px 5px 3px rgb(1, 10, 59);
@@ -251,7 +251,7 @@ body {
     font-size: 7vh;
     color: #fff;
     letter-spacing: 4px;
-} */
+} 
 
 /* .profile_name h4 {
     text-shadow: 3px 3px 2px rgb(13, 25, 90);

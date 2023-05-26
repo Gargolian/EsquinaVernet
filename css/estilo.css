@@ -10,17 +10,17 @@ html {
     scroll-behavior: smooth;
 }
 
-ul {
+nav ul{
     list-style: none;
 }
 
 
-li {
+nav ul li {
     margin: 10px 0;
 }
 
 
-a {
+nav a {
     text-decoration: none;
     color: inherit;
 }
@@ -207,6 +207,61 @@ body {
 .cover {
     margin-top: 10rem;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+main h2{
+    text-align: center;
+    margin-top: 80px;
+    font-size: 2rem;
+
+}
+
+.slider-frame__main{
+    width: 1080px;
+    height: 300px;
+    margin: 80px auto 0;
+    overflow: hidden;
+    
+}
+
+.slider-frame__main ul{
+    display: flex;
+    height: 300px;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
+
+}
+
+.slider-frame__main li{
+    list-style: none;
+    width: 100%;
+
+}
+.slider-frame__main img{
+    margin-top: -150px;
+width:auto;
+height:auto;
+
+}
+
+
+@keyframes slide {
+    0% {margin-left: 0%;}
+    18% {margin-left: 0%;}
+
+    20% {margin-left: -100%;}
+    38% {margin-left: -100%;}
+
+    40% {margin-left: -200%;}
+    58% {margin-left: -200%;}
+
+    60% {margin-left: -300%;}
+    78% {margin-left: -300%;}
+   
+    80% {margin-left: -400%;}
+    100% {margin-left: -400%;}
+   
 }
 
 .profile_bg {

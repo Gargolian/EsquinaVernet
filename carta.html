@@ -1,31 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/estilo.css">
-    <script src="JS/app.js"></script>
+    <meta name="description" content="Bar de picadas, cerveceria, bodegon porteño." />
+    <meta name="keywords" content="picadas, cerveceria, bar, bodegon, esquina vernet" />
+    <meta name="author" content="COMISION 23026 - GRUPO 1" />
+    <meta property="og:title" content="ESQUINA VERNET">
+    <meta property="og:description"
+        content="Bar de picadas, cerveceria, bodegon porteño. Lugar de encuentro y muy buena comida!!! " />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gargolian.github.io/EsquinaVernet/">
+    <meta property="og:image" content="https://gargolian.github.io/EsquinaVernet/img/img_OGTEMP.jpg">
+
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon/android-chrome-192x192.png">
+    <script src="https://kit.fontawesome.com/488b0d20be.js" crossorigin="anonymous"></script>
+
     <title>Esquina Vernet</title>
 </head>
+
 <body>
-    <nav>
-        <ul class="enlace">
-            <li class="home">
-                <a href="/">Home</a>
-            </li>
-            <li class="quienes">
-                <a href="/quienes.html">Quienes somos</a>
-            </li>
-            <li class="carta">
-                <a href="/carta.html">Carta</a>
-            </li>
-            <li class="contacto">
-                <a href="/contacto.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
-    
+    <!--  ******************** ENCABEZADO Y BARRA DE NAVEGACION ********************  -->
+    <header class="header">
+        <div class="container">
+            <!-- ******Inicio BURGER MENU****** -->
+            <!-- ******Inicio lineas de burger menu****** -->
+            <div class="fixed">
+                <div class="header__burger burger">
+                    <span class="burger__line burger__line--first"></span>
+                    <span class="burger__line burger__line--second"></span>
+                    <span class="burger__line burger__line--third"></span>
+                </div>
+            </div>
+            <!-- ******Fin lineas de burger menu****** -->
+            <nav class="header__nav">
+                <ul id="header__list">
+                    <li class="header__item">
+                        <a class="header__link js-scroll" href="/">Inicio</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link js-scroll" href="quienes.html">Quienes Somos</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link js-scroll" href="carta.html">Carta</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__link js-scroll" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="header__item">
+                        <!-- Falta agregar HTML o link para pedidos -->
+                        <a class="header__link js-scroll" href="">Pedidos</a>
+                    </li>
+                </ul>
+                <div class="header__nav-close">
+                    <span class="header__nav-close-line"></span>
+                    <span class="header__nav-close-line"> <span>
+                </div>
+            </nav>
+            <!-- ******Fin BURGER MENU****** -->
+
+            <div class="header__top">
+                <h1 title="Esquina Vernet" class="header__title">Esquina Vernet</h1>
+                <!-- ******Inicio Barra de navegacion inline****** -->
+                <nav class="header_nav">
+                    <ul class="header_list">
+                        <li class="header_item">
+                            <a class="header_link js-scroll" href="/">Inicio</a>
+                        </li>
+                        <li class="header_item">
+                            <a class="header_link js-scroll" href="quienes.html">Quienes Somos</a>
+                        </li>
+                        <li class="header_item">
+                            <a class="header_link js-scroll" href="carta.html">Carta</a>
+                        </li>
+                        <li class="header_item">
+                            <a class="header_link js-scroll" href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- ******Fin Barra de navegacion inline****** -->
+                <!-- ******Inicio Social Links****** -->
+                <nav class="social_links">
+                    <a title="Facebook" href="https://www.facebook.com/EsquinaVernet/?locale=es_LA">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a title="Instagram" href="https://www.instagram.com/esquinavernet/?hl=es"><i
+                            class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a title="Email" href="esquinavernet@gmail.com"><i class="fa-regular fa-envelope"></i>
+                    </a>
+                </nav>
+                <!-- ******Fin Social Links****** -->
+
+            </div>
+
+    </header>
+    <!-- ******************** FIN ENCABEZADO Y BARRA DE NAVEGACION ******************** -->
+
 
     <div class="menu">
         <div class="heading">
@@ -39,11 +113,11 @@
                 <div class="subdetalles">
                     <h5>Hamburguesa clasica</h5>
                     <h5 class="precio">$3000</h5>
-              
 
-                
-            </div>
-            <p></p>
+
+
+                </div>
+                <p></p>
                 <button></button>
 
 
@@ -51,7 +125,7 @@
         </div>
 
         <div class="comidas">
-            <img src="./img/carne.jpg" id ="mi-imagen" alt="">
+            <img src="./img/carne.jpg" id="mi-imagen" alt="">
             <div class="detalles">
 
                 <div class="subdetalles">
@@ -192,7 +266,8 @@
 
 
             </div>
-        </div> <div class="comidas">
+        </div>
+        <div class="comidas">
             <img src="./img/papaschedd.png" alt="">
             <div class="detalles">
 
@@ -213,7 +288,7 @@
 
                 <div class="subdetalles">
                     <h5>Hamburguesa Vernet </h5>
-                    
+
                     <h5 class="precio">$5600</h5>
                 </div>
 
@@ -225,4 +300,5 @@
         </div>
     </div>
 </body>
+
 </html>

@@ -59,6 +59,7 @@ body {
     width: 100%;
     background-image: url(/img/FondoHeaderNav.jpg);
     background-size: 100%;
+    z-index: 100;
 
 }
 
@@ -111,7 +112,7 @@ body {
 
 .social_links a:hover {
     color: #434a54;
-    
+
 }
 
 .header__burger {
@@ -536,12 +537,12 @@ main h2 {
     /* margin-top: 20px;
     margin-bottom: 20px; */
     color: #0c2461;
- 
+
 }
 
-.footer__author p{
-display: block;
-text-align: right;
+.footer__author p {
+    display: block;
+    text-align: right;
 
 }
 
@@ -664,64 +665,66 @@ MAIL:
 
 */
 
-.menu{
-    padding: 0 10px 30px 10px;
+.menu {
+    padding: 80px 10px 30px 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fit ,minmax (300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax (300px, 1fr));
     grid-gap: 20px 40px
 }
 
 @media screen and (min-width: 768px) {
-    .menu{
+    .menu {
         grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
     }
 }
+
 @media screen and (min-width: 1024px) {
     .menu {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-      grid-gap: 30px 60px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+        grid-gap: 30px 60px;
     }
-  }
-  
-  @media screen and (min-width: 1280px) {
+}
+
+@media screen and (min-width: 1280px) {
     .menu {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-      grid-gap: 40px 80px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+        grid-gap: 40px 80px;
     }
-    
-  }
+
+}
 
 
-.menu1{
+.menu1 {
     padding: 0 10px 30px 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fit ,minmax (300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax (300px, 1fr));
     grid-gap: 20px 40px
 }
 
 @media screen and (min-width: 768px) {
-    .menu1{
+    .menu1 {
         grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-        
+
     }
 }
+
 @media screen and (min-width: 1024px) {
     .menu1 {
-      grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-      grid-gap: 30px 60px;
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+        grid-gap: 30px 60px;
     }
-  }
-  
+}
+
 @media screen and (min-width: 1280px) {
-    .menu1{
-      grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
-      grid-gap: 40px 80px;
+    .menu1 {
+        grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
+        grid-gap: 40px 80px;
     }
-   
-  }
+
+}
 
 
-.heading{
+.heading {
     background-color: rgb(0, 0, 0);
     color: white;
     margin-bottom: 10px;
@@ -757,8 +760,8 @@ MAIL:
 }
 
 
-.detalles{
-    padding: 20px ;
+.detalles {
+    padding: 20px;
     display: grid;
     grid-template-rows: 1fr 50px;
     grid-row-gap: 15px;
@@ -767,51 +770,38 @@ MAIL:
 .comidas1 {
     display: grid;
     position: relative;
-    grid-template-columns: auto auto; 
+    grid-template-columns: auto auto;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(114, 13, 13, 0.175);
-  }
-  
-  .comidas1 img {
+}
+
+.comidas1 img {
     width: 100%;
     border-radius: 15px 0 0 15px;
-    
-  }
-  
-  .detalles1 {
+}
+
+.detalles1 {
     padding: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-  
-  .subdetalles1 {
-    margin-top: 15px; 
-  }
-  
-  .subdetalles1 h4{
+}
+
+.subdetalles1 {
+    margin-top: 15px;
+}
+
+.subdetalles1 h4 {
     margin-top: 50px;
+}
 
+.subdetalles1 p {
+    margin-top: 20px;
+}
 
-  }
-  .subdetalles1 p {
-    margin-top: 20px; 
-  }
-  
-
-
-
-
-
-
-
-
-
-
-.subdetalles{
+.subdetalles {
     display: grid;
     grid-template-columns: auto auto;
-    
 }
 
 .subdetalles>h5 {
@@ -819,7 +809,7 @@ MAIL:
     font-size: 18px;
 }
 
-.precio{
+.precio {
     text-align: right;
     color: brown;
 }
@@ -830,10 +820,10 @@ MAIL:
     line-height: 28px;
     font-weight: 400;
     align-self: stretch;
-
 }
-.detalles>button{
-    background-color: rgb(0, 0, 0);;
+
+.detalles>button {
+    background-color: rgb(0, 0, 0);
     padding: 5px;
     border: none;
     color: #fff;
@@ -843,3 +833,18 @@ MAIL:
     width: 200px;
 }
 
+.contact__main {
+    padding: 100px 10px 10px 0;
+}
+
+.contact__main-container {
+    width: 80%;
+    margin: 20px auto 20px auto;
+    text-align: justify;
+    font-style: italic;
+    text-shadow: 2px 2px 8px #8f8d8d;
+}
+
+.contact__main-text {
+    text-align: center;
+}

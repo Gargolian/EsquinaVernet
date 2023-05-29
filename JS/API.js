@@ -2,12 +2,14 @@
 //let plato= document.getElementById("subdetallesDiv");
    // let imagen = document.getElementById("imgplato");
     //let imagen1 = document.getElementById("imgplato");
+    console.log("Entro a la API.js");
     let plato = document.getElementById("comidasDiv");
 
 
     document.addEventListener("DOMContentLoaded", function() {
         if (window.location.pathname === "/plato_del_dia.html") {
           // Hacer la solicitud Fetch a la API
+           console.log("Entro al if "+window.location.pathname);
           fetch("https://www.themealdb.com/api/json/v1/1/random.php")
             .then(response => response.json())
             .then(data => {
@@ -43,6 +45,7 @@
 
               
             })
+           console.log("salio del fetch");
             .catch(error => {
               // Manejar errores de la solicitud
               console.log("Ocurrió un error:", error);

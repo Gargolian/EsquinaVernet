@@ -7,6 +7,8 @@
 
 
     document.addEventListener("DOMContentLoaded", function() {
+        console.log("entro a la function");
+        console.log("el valor de window.location.pathname="+window.location.pathname);
         if (window.location.pathname === "/plato_del_dia.html") {
           // Hacer la solicitud Fetch a la API
            console.log("Entro al if "+window.location.pathname);

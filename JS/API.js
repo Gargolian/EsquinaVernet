@@ -6,7 +6,7 @@
 
 
     document.addEventListener("DOMContentLoaded", function() {
-        if (window.location.pathname === "./plato_del_dia.html") {
+        if (window.location.pathname === "/plato_del_dia.html") {
           // Hacer la solicitud Fetch a la API
           fetch("https://www.themealdb.com/api/json/v1/1/random.php")
             .then(response => response.json())

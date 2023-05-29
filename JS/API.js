@@ -44,8 +44,10 @@
 
 
               
-            })
-           console.log("salio del fetch");
+            }
+            console.log("salio del fetch");     
+                 )
+           
             .catch(error => {
               // Manejar errores de la solicitud
               console.log("Ocurrió un error:", error);

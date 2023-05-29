@@ -44,9 +44,7 @@
 
 
               
-            }
-            console.log("salio del fetch");     
-                 )
+            })
            
             .catch(error => {
               // Manejar errores de la solicitud

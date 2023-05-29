@@ -208,6 +208,12 @@ body {
     transform: translateY(-50%) rotate(-45deg);
 }
 
+.slider-frame__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .slider-frame__main {
     width: 1080px;
     height: 300px;
@@ -219,8 +225,8 @@ body {
     display: flex;
     height: 300px;
     padding: 0;
-    width: 400%;
-    animation: slide 20s infinite alternate ease-in-out;
+    width: 500%;
+    animation: slide 10s infinite alternate ease-in-out;
 }
 
 .slider-frame__main li {
@@ -459,6 +465,19 @@ main h2 {
     .main__subtitle {
         width: 100%;
     }
+    .slider-frame__container {
+        display: none;
+    }
+
+    .main__frase {
+        margin-top: 130px;
+    }
+    /* .slider-frame__container {
+        transform: scale(60%);
+    } */
+    /* .slider-frame__main ul{
+        transform: scale(40%);
+    } */
 }
 
 @media only screen and (max-width: 540px) {
@@ -528,6 +547,13 @@ main h2 {
         margin: auto;
     }
 
+    .slider-frame__container {
+        display: none;
+    }
+
+    .main__frase {
+        margin-top: 130px;
+    }
 }
 
 
@@ -734,7 +760,7 @@ MAIL:
 }
 
 .platodeldia button {
-    position:relative;
+    position: relative;
     top: 50%;
     right: 10px;
     transform: translateY(-50%);
@@ -747,21 +773,24 @@ MAIL:
     border-radius: 12px;
     width: 150px;
 }
-.heading>h1{
+
+.heading>h1 {
     font-weight: 400;
     font-size: 30px;
     letter-spacing: 10px;
     margin-bottom: 10px;
 }
-.heading>a{
+
+.heading>a {
     font-weight: 400;
     font-size: 30px;
-    
+
 }
-.heading>a>button{
-    background-color:brown;
+
+.heading>a>button {
+    background-color: brown;
     padding: 5px;
-    border:3px;
+    border: 3px;
     color: #020101;
     font-size: 20px;
     font-weight: 600;
@@ -769,8 +798,9 @@ MAIL:
     width: 450px;
 
 }
-.comidas{
-   
+
+.comidas {
+
     display: grid;
     position: relative;
     grid-template-rows: auto 1fr;

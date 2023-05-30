@@ -378,6 +378,24 @@ main h2 {
     padding: 10px;
     margin: 0;
 }
+.main__subtitle_quienes {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    margin: 0;
+    flex-flow: row-reverse;
+}
+
+.main__subtitle_quienes h4{
+    text-align: center;
+    margin: 10px 0 ;
+}
+
+.main__subtitle_quienes img {
+    margin: 10px;
+
+
+}
 
 .main__prod-img {
     width: auto;
@@ -465,6 +483,13 @@ main h2 {
     .main__subtitle {
         width: 100%;
     }
+
+    .main__subtitle_quienes{
+        display: block;
+        width: 100%;
+        margin: auto;
+    }
+
     .slider-frame__container {
         display: none;
     }
@@ -532,6 +557,12 @@ main h2 {
         display: block;
         align-content: center;
     }
+
+    .main__subtitle_quienes img{
+        width: 90%;
+        margin: auto;
+    }
+    
 
     .main__subtitle_father {
         justify-items: center;

@@ -26,8 +26,8 @@
 </head>
 
 <body>
-      <!--  ******************** ENCABEZADO Y BARRA DE NAVEGACION ********************  -->
-      <header class="header">
+    <!--  ******************** ENCABEZADO Y BARRA DE NAVEGACION ********************  -->
+    <header class="header">
         <div class="container">
             <!-- ******Inicio BURGER MENU****** -->
             <!-- ******Inicio lineas de burger menu****** -->
@@ -55,7 +55,9 @@
                     </li>
                     <li class="header__item">
                         <!-- Falta agregar HTML o link para pedidos -->
-                        <a class="header__link js-scroll" href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/esquina-vernet-delivery-menu?sem_tracker=14862314321&pycat=googlesearch&cmp=&ag=&kwd=&mt=&net=g&dev=c&sitelink=&gclid=Cj0KCQjwmtGjBhDhARIsAEqfDEc5qjMYBNLouVneheIdLEeI12izIVQi4GXkXUvDWMapaaFsBjXAf6EaAsyUEALw_wcB" target="_blank">Pedidos</a>
+                        <a class="header__link js-scroll"
+                            href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/esquina-vernet-delivery-menu?sem_tracker=14862314321&pycat=googlesearch&cmp=&ag=&kwd=&mt=&net=g&dev=c&sitelink=&gclid=Cj0KCQjwmtGjBhDhARIsAEqfDEc5qjMYBNLouVneheIdLEeI12izIVQi4GXkXUvDWMapaaFsBjXAf6EaAsyUEALw_wcB"
+                            target="_blank">Pedidos</a>
                     </li>
                 </ul>
                 <div class="header__nav-close">
@@ -83,7 +85,9 @@
                             <a class="header_link js-scroll" href="contacto.html">Contacto</a>
                         </li>
                         <li class="header_item">
-                            <a class="header_link js-scroll" href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/esquina-vernet-delivery-menu?sem_tracker=14862314321&pycat=googlesearch&cmp=&ag=&kwd=&mt=&net=g&dev=c&sitelink=&gclid=Cj0KCQjwmtGjBhDhARIsAEqfDEc5qjMYBNLouVneheIdLEeI12izIVQi4GXkXUvDWMapaaFsBjXAf6EaAsyUEALw_wcB" target="_blank">Pedidos</a>
+                            <a class="header_link js-scroll"
+                                href="https://www.pedidosya.com.ar/restaurantes/buenos-aires/esquina-vernet-delivery-menu?sem_tracker=14862314321&pycat=googlesearch&cmp=&ag=&kwd=&mt=&net=g&dev=c&sitelink=&gclid=Cj0KCQjwmtGjBhDhARIsAEqfDEc5qjMYBNLouVneheIdLEeI12izIVQi4GXkXUvDWMapaaFsBjXAf6EaAsyUEALw_wcB"
+                                target="_blank">Pedidos</a>
                         </li>
                     </ul>
                 </nav>
@@ -144,12 +148,12 @@
 
                             <div class="mb-4">
                                 <label for="correo"><i class="bi bi-envelope-fill"></i> Correo</label>
-                                <input type="email" class="form-control" name="email" id="email"
+                                <input type="txt" class="form-control" name="email" id="email"
                                     placeholder="Su su@correo.com">
                                 <div class="correo text-danger"></div>
                             </div>
 
-                           <div class="mb-4">
+                            <div class="mb-4">
                                 <label for="mensaje"><i class="bi bi-chat-right-dots-fill" required></i> Mensaje</label>
                                 <textarea type="text" class="form-control" name="mensaje" id="mensaje"
                                     placeholder="Escriba su mensaje"></textarea>
@@ -169,46 +173,23 @@
             </section>
         </div>
     </main>
-    <script>
-        //asignamos el evento listerner al boton enviar del formulario
-        const $form = document.querySelector('#form')
-
-        $form.addEventListener('submit', enviar)//al ejecutar el evento llamamos a la funcion enviar
-
-        //la funcion va a esperar la respuesta de la api para enviar el mensaje alert
-        async function enviar(event) {
-            event.preventDefault()
-            const form = new FormData(this)
-            const response = await fetch(this.action, {
-                method: this.method,
-                body: form,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            })
-            if (response.ok) {
-                this.reset()
-                alert('Gracias por contactarnos, te escribiremos a la brevedad')
-
-            }
-        }
-
-    </script>
-<!-- ******************** FOOTER ******************** -->
-<footer>
-    <div class="footer">
-        <div class="footer__container">
-            <div class="footer__author">
-                <p> &copy; Com. 23026 - Equipo Nro. 1 </p>
-            </div>
-            <div class="footer__alero">
-                <img src="img/F_alero_1.jpg" alt="">
+    <!-- ******************** VALIDACION DEL FORMULARIO ******************** -->
+    <script src="JS/validacion.js"> </script>
+    <!-- ******************** FOOTER ******************** -->
+    <footer>
+        <div class="footer">
+            <div class="footer__container">
+                <div class="footer__author">
+                    <p> &copy; Com. 23026 - Equipo Nro. 1 </p>
+                </div>
+                <div class="footer__alero">
+                    <img src="img/F_alero_1.jpg" alt="">
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-<!-- ******************** FIN FOOTER ******************** -->
-<script src="JS/app.js"></script>
+    </footer>
+    <!-- ******************** FIN FOOTER ******************** -->
+    <script src="JS/app.js"></script>
 </body>
 
 </html>
